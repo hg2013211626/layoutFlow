@@ -1,5 +1,7 @@
 package org.layout.core.javaopt;
 
+import com.sun.org.apache.bcel.internal.classfile.Code;
+
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -63,6 +65,11 @@ public class CodeEmitter {
     }
 
     public CodeEmitter indent() {
+        cursor += 1;
+        return this;
+    }
+
+    public CodeEmitter incIndent() {
         cursor += 1;
         return this;
     }
