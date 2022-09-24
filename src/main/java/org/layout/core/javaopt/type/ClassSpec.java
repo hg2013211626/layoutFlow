@@ -16,7 +16,7 @@ import java.util.List;
 public class ClassSpec {
     private String name;
     private TypeName supperClass;
-//    private List<FieldS>
+    private List<FieldS>
 
 
 
